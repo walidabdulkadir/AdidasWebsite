@@ -1,8 +1,8 @@
 import "./NavBar.css";
-import adidasPng from "../photo/adidas.png";
-import profile from "../photo/Conta.png";
-import likes from "../photo/ListadeDesejos.png";
-import cart from "../photo/Carrinho.png";
+import adidasPng from "../../assets/photo/adidas.png";
+import profile from "../../assets/photo/Conta.png";
+import likes from "../../assets/photo/ListadeDesejos.png";
+import cart from "../../assets/photo/Carrinho.png";
 
 function NavBar() {
   return (
