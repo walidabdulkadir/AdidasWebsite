@@ -14,10 +14,10 @@ function Main() {
             to unlock those things that you love.
           </p>
           <div className="cover-btns">
-            <p className="cover-btn">
+            {/* <p className="cover-btn">
               <img src={arrow} alt="" />
               SEE MORE
-            </p>
+            </p> */}
             <p className="cover-btn">
               <img src={arrow} alt="" />
               BUY NOW
