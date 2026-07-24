@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-text {
+  background-color: black;
+  width: auto;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navAbove {
+  color: rgb(209, 209, 23);
+  font-size: 8px;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.05rem;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 50px;
+  background-color: #795959;
+  gap: 20px;
+}
+img {
+  width: 20px;
+  height: auto;
+}
