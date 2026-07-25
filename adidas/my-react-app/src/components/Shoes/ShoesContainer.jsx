@@ -34,11 +34,11 @@ function ShoesContainer() {
             <div className="card-image">
               <img src={src} alt={`product-${i}`} />
             </div>
-            <div className="card-content">
+            {/* <div className="card-content">
               <div className="product-title">Sneaker {i + 1}</div>
               <div className="product-sub">Lifestyle</div>
               <div className="price">$129.99</div>
-            </div>
+            </div> */}
           </article>
         ))}
       </div>
