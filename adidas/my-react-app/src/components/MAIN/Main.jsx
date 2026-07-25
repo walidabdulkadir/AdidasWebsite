@@ -1,5 +1,5 @@
 import "./Main.css";
-import arrow from "../../assets/photo/Seta Botão.png";
+import arrow from "../../assets/photo/arrow2.png";
 
 function Main() {
   return (
@@ -9,19 +9,19 @@ function Main() {
           <h1>
             ADICLUB <br /> IS SHOWING OFF
           </h1>
-          <p>
+          <p className="cover-desc">
             Exclusive releases for our members and more ways <br />
             to unlock those things that you love.
           </p>
           <div className="cover-btns">
-            {/* <p className="cover-btn">
-              <img src={arrow} alt="" />
+            <a className="cover-btn">
+              <img src={arrow} alt="arrow" className="arrow" />
               SEE MORE
-            </p> */}
-            <p className="cover-btn">
-              <img src={arrow} alt="" />
+            </a>
+            <a className="cover-btn">
+              <img src={arrow} alt="arrow" className="arrow" />
               BUY NOW
-            </p>
+            </a>
           </div>
         </div>
       </div>

@@ -11,3 +11,32 @@
   width: 100%;
   height: 100vh;
 }
+.cover-overlay {
+  left: 100px;
+  top: 200px;
+  position: absolute;
+  font-size: 20px;
+}
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+.cover-desc {
+  font-size: 15px;
+  word-spacing: 0.1rem;
+  color: aliceblue;
+}
+.cover-btn {
+  cursor: pointer;
+  display: block;
+  color: white;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px;
+}
+.arrow {
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+}
