@@ -1,14 +1,16 @@
 import "./App.css";
 import NavBar from "./components/NAV/NavBar";
-import Main from "./components/MAIN/Main";
+import Hero from "./components/Hero/Hero";
 import ShoesContainer from "./components/Shoes/ShoesContainer";
+import Offers from "./components/Offers/Offers";
 
 function App() {
   return (
     <div className="app">
       <NavBar />
-      <Main />
+      <Hero />
       <ShoesContainer />
+      <Offers />
     </div>
   );
 }
