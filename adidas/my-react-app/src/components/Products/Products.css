@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productImg {
+  width: 25%;
+  margin: 10px;
+}
+.productImg img {
+  width: auto;
+  height: 300px;
+}
+h3 {
+  margin-top: 30px;
+}
