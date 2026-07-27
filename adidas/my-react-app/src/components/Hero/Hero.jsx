@@ -1,5 +1,5 @@
 import "./Hero.css";
-import arrow from "../../assets/photo/arrow2.png";
+// import arrow from "../../assets/photo/arrow2.png";
 
 function Hero() {
   return (
@@ -13,7 +13,16 @@ function Hero() {
             Exclusive releases for our members and more ways <br />
             to unlock those things that you love.
           </p>
-          <div className="cover-btns">
+          <div className="hero-button">
+            <button className="buy-btn">
+              <span>→</span> SEE MORE
+            </button>
+
+            <button className="info-btn">
+              <span>→</span> BUY NOW
+            </button>
+          </div>
+          {/* <div className="cover-btns">
             <a className="cover-btn">
               <img src={arrow} alt="arrow" className="arrow" />
               SEE MORE
@@ -22,7 +31,7 @@ function Hero() {
               <img src={arrow} alt="arrow" className="arrow" />
               BUY NOW
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
