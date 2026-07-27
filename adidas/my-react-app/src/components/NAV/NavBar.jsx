@@ -16,12 +16,12 @@ function NavBar() {
       <div className="nav">
         <div className="nav-container">
           <img src={adidasPng} alt="" />
-          <p>WOMAN</p>
-          <p>MEN</p>
-          <p>KIDS</p>
-          <p>NEWS</p>
-          <p>SPORTS</p>
-          <p>ADIDAS WORLD</p>
+          <div>WOMAN</div>
+          <div>MEN</div>
+          <div>KIDS</div>
+          <div>NEWS</div>
+          <div>SPORTS</div>
+          <div>ADIDAS WORLD</div>
           <div>
             <input
               type="search"

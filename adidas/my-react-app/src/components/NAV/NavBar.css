@@ -25,15 +25,15 @@
   width: auto;
   height: 50px;
   background-color: #ffffff;
-  gap: 20px;
 }
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: auto;
-  height: 50px;
+  width: 400px;
+  height: 30px;
+  background-color: #ffffff;
 }
 img {
   width: 20px;
