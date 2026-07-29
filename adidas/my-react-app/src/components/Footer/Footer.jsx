@@ -1,4 +1,5 @@
 import "./Footer.css";
+import "tailwindcss";
 import logo from "../../assets/photo/newAddidas.png";
 import fb from "../../assets/photo/fb.png";
 import yt from "../../assets/photo/yt.png";
