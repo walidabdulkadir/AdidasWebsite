@@ -1,13 +1,14 @@
-import "./Description.css";
 import desc from "../../assets/photo/WHAT IS ADIDAS.png";
 
 function Description() {
   return (
-    <>
-      <div className="imageContainer">
-        <img src={desc} alt="" className="imagePng" />
-      </div>
-    </>
+    <section className="mx-auto mb-12 max-w-7xl px-6 sm:px-8">
+      <img
+        src={desc}
+        alt="What is Adidas"
+        className="w-full rounded-3xl object-cover"
+      />
+    </section>
   );
 }
 

@@ -1,4 +1,3 @@
-import "./Products.css";
 import img1 from "../../assets/photo/2023 COLLECTION.png";
 import img2 from "../../assets/photo/GAZELLE 30 OFF.png";
 import img3 from "../../assets/photo/PROOF WATER.png";
@@ -6,27 +5,27 @@ import img4 from "../../assets/photo/2023 RELEASES.png";
 
 function Products() {
   return (
-    <>
-      <div className="container">
-        <div>
-          <h3>MOST INTERESTING</h3>
-          <div className="sub-container">
-            <div className="productImg">
-              <img src={img1} alt="" />
+    <section className="mx-auto mb-12 max-w-7xl px-6 sm:px-8">
+      <div className="space-y-6 text-center">
+        <h3 className="text-3xl font-bold uppercase tracking-[0.18em] text-white">
+          Most Interesting
+        </h3>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {[img1, img2, img3, img4].map((src, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-[24px] bg-slate-950 shadow-lg shadow-black/20"
+            >
+              <img
+                src={src}
+                alt={`Product ${index + 1}`}
+                className="h-[300px] w-full object-cover"
+              />
             </div>
-            <div className="productImg">
-              <img src={img2} alt="" />
-            </div>
-            <div className="productImg">
-              <img src={img3} alt="" />
-            </div>
-            <div className="productImg">
-              <img src={img4} alt="" />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

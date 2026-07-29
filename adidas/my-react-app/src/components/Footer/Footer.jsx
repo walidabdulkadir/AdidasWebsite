@@ -1,5 +1,3 @@
-import "./Footer.css";
-import "tailwindcss";
 import logo from "../../assets/photo/newAddidas.png";
 import fb from "../../assets/photo/fb.png";
 import yt from "../../assets/photo/yt.png";
@@ -11,58 +9,92 @@ import sponsor3 from "../../assets/photo/visa.jpg";
 
 function Footer() {
   return (
-    <>
-      <div className="footer-container">
-        <div className="Logo">
-          {" "}
-          <img src={logo} alt="" className="logo" />{" "}
+    <footer className="border-t border-white/10 bg-[#131212] px-6 py-10 text-slate-100 sm:px-8 md:px-16">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10">
+        <div className="flex justify-center pb-6">
+          <img
+            src={logo}
+            alt="Adidas logo"
+            className="h-20 w-auto object-contain"
+          />
         </div>
-        <div className="mid-container">
-          <div className="cloumns">
-            <h3 className="title">INFO</h3>
-            <p>Terms and Condition</p>
-            <p>Cookies</p>
-            <p>Privacy Politics</p>
-            <p></p>
+
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="space-y-3 text-center lg:text-left">
+            <h3 className="text-xl font-extrabold uppercase tracking-[0.2em] text-white">
+              Info
+            </h3>
+            <p className="text-sm text-slate-400">Terms and Condition</p>
+            <p className="text-sm text-slate-400">Cookies</p>
+            <p className="text-sm text-slate-400">Privacy Politics</p>
           </div>
-          <div className="cloumns">
-            <h3 className="title">COLLECTIONS</h3>
-            <p>Ultra</p>
-            <p>Confirmed</p>
-            <p>NMD</p>
-            <p>Originals</p>
+
+          <div className="space-y-3 text-center lg:text-left">
+            <h3 className="text-xl font-extrabold uppercase tracking-[0.2em] text-white">
+              Collections
+            </h3>
+            <p className="text-sm text-slate-400">Ultra</p>
+            <p className="text-sm text-slate-400">Confirmed</p>
+            <p className="text-sm text-slate-400">NMD</p>
+            <p className="text-sm text-slate-400">Originals</p>
           </div>
-          <div className="cloumns">
-            <h3 className="title">SPORTS</h3>
-            <p>Football</p>
-            <p>Basketball</p>
-            <p>Running</p>
-            <p>Training</p>
+
+          <div className="space-y-3 text-center lg:text-left">
+            <h3 className="text-xl font-extrabold uppercase tracking-[0.2em] text-white">
+              Sports
+            </h3>
+            <p className="text-sm text-slate-400">Football</p>
+            <p className="text-sm text-slate-400">Basketball</p>
+            <p className="text-sm text-slate-400">Running</p>
+            <p className="text-sm text-slate-400">Training</p>
           </div>
-          <div className="cloumns">
-            <h3 className="title">Support</h3>
-            <p>Customer</p>
-            <p>FAQ</p>
-            <p>Shipping</p>
-            <p>adiClub</p>
+
+          <div className="space-y-3 text-center lg:text-left">
+            <h3 className="text-xl font-extrabold uppercase tracking-[0.2em] text-white">
+              Support
+            </h3>
+            <p className="text-sm text-slate-400">Customer</p>
+            <p className="text-sm text-slate-400">FAQ</p>
+            <p className="text-sm text-slate-400">Shipping</p>
+            <p className="text-sm text-slate-400">adiClub</p>
           </div>
-          <div className="footer-column">
-            <h3 className="title">FOLLOW US</h3>
-            <div className="social-links">
-              <img src={fb} alt="Facebook" />
-              <img src={yt} alt="YouTube" />
-              <img src={instagram} alt="Instagram" />
-              <img src={x} alt="X" />
+
+          <div className="space-y-4 text-center lg:text-left">
+            <h3 className="text-xl font-extrabold uppercase tracking-[0.2em] text-white">
+              Follow Us
+            </h3>
+            <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
+              {[fb, yt, instagram, x].map((icon, index) => (
+                <img
+                  key={index}
+                  src={icon}
+                  alt="Social icon"
+                  className="h-8 w-8 object-contain transition duration-200 hover:-translate-y-1 hover:opacity-90"
+                />
+              ))}
             </div>
           </div>
         </div>
-        <div className="sponsors">
-          <img src={sponsor1} alt="American Express" />
-          <img src={sponsor2} alt="mastercard" />
-          <img src={sponsor3} alt="Visa" />
+
+        <div className="flex flex-wrap items-center justify-center gap-6 border-t border-white/10 pt-6">
+          <img
+            src={sponsor1}
+            alt="American Express"
+            className="h-7 object-contain opacity-90"
+          />
+          <img
+            src={sponsor2}
+            alt="Mastercard"
+            className="h-7 object-contain opacity-90"
+          />
+          <img
+            src={sponsor3}
+            alt="Visa"
+            className="h-7 object-contain opacity-90"
+          />
         </div>
       </div>
-    </>
+    </footer>
   );
 }
 

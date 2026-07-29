@@ -1,4 +1,3 @@
-import "./App.css";
 import NavBar from "./components/NAV/NavBar";
 import Hero from "./components/Hero/Hero";
 import ShoesContainer from "./components/Shoes/ShoesContainer";
@@ -9,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="app">
+    <div className="min-h-screen bg-black text-white">
       <NavBar />
       <Hero />
       <ShoesContainer />
