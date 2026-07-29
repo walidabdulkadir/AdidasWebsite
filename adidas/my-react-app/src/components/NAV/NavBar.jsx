@@ -40,6 +40,8 @@ function NavBar() {
             />
           </div>
           <div></div>
+          <div></div>
+          <div></div>
           <div className="flex items-center gap-7">
             <img
               className="h-auto w-4 cursor-pointer object-contain"
