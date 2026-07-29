@@ -39,9 +39,6 @@ function NavBar() {
               className=" h-auto w-10 rem relative right-10 -ml-10 cursor-pointer object-contain"
             />
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
           <div className="flex items-center gap-7">
             <img
               className="h-auto w-4 cursor-pointer object-contain"
