@@ -6,15 +6,15 @@ import img4 from "../../assets/photo/2023 RELEASES.png";
 function Products() {
   return (
     <section className="mx-auto mb-12 max-w-7xl px-6 sm:px-8">
-      <div className="space-y-6 text-center">
-        <h3 className="text-3xl font-bold uppercase tracking-[0.18em] text-white">
+      <div className="space-y-6">
+        <h3 className="text-3xl font-bold uppercase tracking-[0.15em] ">
           Most Interesting
         </h3>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {[img1, img2, img3, img4].map((src, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-[24px] bg-slate-950 shadow-lg shadow-black/20"
+              className="overflow-hidden rounded-[5px] shadow-lg shadow-black/20"
             >
               <img
                 src={src}
