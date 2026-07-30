@@ -1,8 +1,5 @@
 import logo from "../../assets/photo/newAddidas.png";
-import fb from "../../assets/photo/fb.png";
-import yt from "../../assets/photo/yt.png";
-import instagram from "../../assets/photo/instagram.png";
-import x from "../../assets/photo/x.png";
+import { FaFacebook, FaYoutube, FaInstagram, FaTwitter } from "react-icons/fa";
 import sponsor1 from "../../assets/photo/express.png";
 import sponsor2 from "../../assets/photo/master.png";
 import sponsor3 from "../../assets/photo/visa.jpg";
@@ -63,15 +60,17 @@ function Footer() {
             <h3 className="text-xl font-extrabold uppercase tracking-[0.2em] text-white">
               Follow Us
             </h3>
-            <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-              {[fb, yt, instagram, x].map((icon, index) => (
-                <img
-                  key={index}
-                  src={icon}
-                  alt="Social icon"
-                  className="h-8 w-8 object-contain transition duration-200 hover:-translate-y-1 hover:opacity-90"
-                />
-              ))}
+            <div className="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 lg:justify-start ">
+              {[FaFacebook, FaYoutube, FaInstagram, FaTwitter].map(
+                (icon, index) => (
+                  <img
+                    key={index}
+                    src={icon}
+                    alt="Social icon"
+                    className="h-8 w-8 object-contain "
+                  />
+                ),
+              )}
             </div>
           </div>
         </div>

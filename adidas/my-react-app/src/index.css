@@ -1,17 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  color-scheme: dark;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  background-color: #000;
-  color: #fff;
   font-family:
     Inter,
     ui-sans-serif,
