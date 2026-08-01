@@ -2,13 +2,13 @@ import girlImage from "../../assets/photo/Girl Image.png";
 
 function Offers() {
   return (
-    <div className="mx-auto mb-10 max-w-[1200px] overflow-hidden rounded-[40px] bg-[#1f1c1d] text-white md:flex">
+    <div className="mx-auto mb-10 max-w-300 overflow-hidden rounded-[40px] bg-[#1f1c1d] text-white md:flex">
       <div
-        className="relative h-[420px] w-full bg-cover bg-center md:w-[35%]"
+        className="relative h-105 w-full bg-cover bg-center md:w-[35%]"
         style={{ backgroundImage: `url(${girlImage})` }}
       >
-        <div className="absolute top-10 left-6 md:left-[130px] z-10">
-          <h1 className="lg:text-7xl font-extrabold uppercase leading-tight md:text-5xl ">
+        <div className="absolute top-10 left-6 md:left-32.5 z-10">
+          <h1 className="text-7xl font-extrabold uppercase leading-tight md:text-5xl lg:text-7xl">
             OUTFITS FOR <br />
             <span className="text-[#e6d23d]">BENEFITS</span>
           </h1>

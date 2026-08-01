@@ -19,7 +19,7 @@ function Products() {
               <img
                 src={src}
                 alt={`Product ${index + 1}`}
-                className="h-[300px] w-full object-cover"
+                className="h-75 w-full object-cover"
               />
             </div>
           ))}

@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import adidasPng from "../../assets/photo/adidas.png";
 import {
+  FiChevronDown,
   FiMenu,
   FiX,
   FiUser,
@@ -11,13 +12,33 @@ import {
 import MobileMenu from "./MobileMenu";
 
 function NavBar() {
+  const sentences = [
+    "NEW COLLABS FOR THIS WEEK. CHECK OUT THE ADICLUB FOR MORE.",
+    "Mothers day adidas | all the best for your mother.",
+    "Express with move and creativity. See more here."
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % sentences.length);
+    }, 3000);
+
+    // cleanup when component is removed
+    return () => clearInterval(interval);
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="box-border">
       <div className="flex h-10 items-center justify-center bg-black text-sm">
-        <div className="text-[8px] font-bold tracking-[0.05em] text-[#ede734]">
-          NEW COLLABS FOR THIS WEEK. CHECK OUT THE ADICLUB FOR MORE
+        <div className="text-[8px] uppercase tracking-[5px] font-bold tracking-wider text-[#ede734]">
+          {sentences[index]}
+        </div>
+        <div className="flex items-center gap-2">
+          <FiChevronDown className="h-4 w-4 cursor-pointer text-[#ede734]" />
         </div>
       </div>
 
@@ -26,7 +47,7 @@ function NavBar() {
           <div className="flex items-center justify-center gap-13 ">
             <div className="flex items-center gap-3">
               <img
-                className="w-16 object-contain flex-shrink-0 "
+                className="w-16 object-contain shrink-0"
                 src={adidasPng}
                 alt="Adidas logo"
               />
@@ -52,7 +73,7 @@ function NavBar() {
                   placeholder="Search..."
                 />
                 <FiSearch
-                  className="absolute right-2 top-1/2 h-4 w-5 -translate-y-1/2 text-slate-500 sm:flex h-5 w-5 absolute right-2 top-1/2 cursor-pointer text-black "
+                  className="absolute right-2 top-1/2 h-5 w-5 -translate-y-1/2 cursor-pointer text-slate-500"
                   aria-label="Search"
                 />
               </div>
