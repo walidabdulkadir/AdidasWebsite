@@ -56,21 +56,15 @@ function Footer() {
             <p className="text-sm text-slate-400">adiClub</p>
           </div>
 
-          <div className="space-y-4 text-center lg:text-left">
+          <div className="space-y-4 text-center ">
             <h3 className="text-xl font-extrabold uppercase tracking-[0.2em] text-white">
               Follow Us
             </h3>
-            <div className="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 lg:justify-start ">
-              {[FaFacebook, FaYoutube, FaInstagram, FaTwitter].map(
-                (icon, index) => (
-                  <img
-                    key={index}
-                    src={icon}
-                    alt="Social icon"
-                    className="h-8 w-8 object-contain "
-                  />
-                ),
-              )}
+            <div className="grid grid-cols-2 place-items-center gap-7 w-fit mx-auto lg:mx-20">
+              <FaFacebook className="h-5 w-5 cursor-pointer " />
+              <FaYoutube className="h-5 w-5 cursor-pointer " />
+              <FaInstagram className="h-5 w-5 cursor-pointer " />
+              <FaTwitter className="h-5 w-5 cursor-pointer " />
             </div>
           </div>
         </div>

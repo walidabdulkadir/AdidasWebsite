@@ -4,7 +4,7 @@ import adidasPng from "../../assets/photo/adidas.png";
 function Hero() {
   return (
     <div
-      className="relative w-full h-[500px] bg-cover bg-center"
+      className="relative w-full h-125 bg-cover bg-center"
       style={{ backgroundImage: `url(${cover})` }}
     >
       <div className="absolute left-5 top-1/2 -translate-y-1/2 md:left-30">
@@ -13,7 +13,7 @@ function Hero() {
             ADICLUB <br /> IS SHOWING OFF.
           </h1>
           <img
-            className="md:absolute left-7 top-2 z-10 w-93 max-w-full "
+            className="md:absolute left-7 top-2 z-10 w-48 sm:w-64  absolute -bottom-3 left-5 md:w-93 max-w-full"
             src={adidasPng}
             alt="Adidas logo"
           />
