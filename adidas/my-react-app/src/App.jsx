@@ -1,6 +1,6 @@
 import NavBar from "./components/NAV/NavBar";
 import Hero from "./components/Hero/Hero";
-import ShoesContainer from "./components/Shoes/ShoesContainer";
+import ShoesList from "./components/Shoes/ShoesList";
 import Offers from "./components/Offers/Offers";
 import Description from "./components/Description/Description";
 import Products from "./components/Products/Products";
@@ -11,9 +11,9 @@ function App() {
     <div className="min-h-screen text-black">
       <NavBar />
       <Hero />
-      <ShoesContainer />
+      <ShoesList title="adiweek" />
       <Offers />
-      <ShoesContainer />
+      <ShoesList title="Do you still like these products?" />
       <Description />
       <Products />
       <Footer />
