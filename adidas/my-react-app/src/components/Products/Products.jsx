@@ -7,7 +7,7 @@ function Products() {
   return (
     <section className="mx-auto mb-12 max-w-7xl px-6 sm:px-8">
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold uppercase tracking-[0.15em] ">
+        <h3 className="text-3xl font-bold uppercase tracking-[0.15em] mt-10 ">
           Most Interesting
         </h3>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
